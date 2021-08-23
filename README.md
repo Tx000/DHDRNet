@@ -14,7 +14,7 @@ By Xiao Tan, Huaian Chen, Kai Xu, Chunmei Xu, Yi Jin, Changan Zhu
 - NVIDIA GPU + [CUDA](https://developer.nvidia.com/cuda-downloads)
 - [Deformable Convolution](https://arxiv.org/abs/1703.06211). We use [mmdetection](https://github.com/open-mmlab/mmdetection)'s dcn implementation. Please first compile it.
   ```
-  cd ./codes/models/archs/dcn
+  cd ./dcn
   python setup.py develop
   ```
 
