@@ -5,7 +5,6 @@ By Xiao Tan, Huaian Chen, Kai Xu, Chunmei Xu, Yi Jin, Changan Zhu
 ### Highlights
 - **self-guided attention**: reduces the influence of the saturated regions in the alignment and fusion processes
 - **a pyramidal deformable module**: effectively remove ghosting artifacts
-- **State of the art**
 
 ## Dependencies and Installation
 
@@ -23,7 +22,7 @@ We use datasets in h5 format for faster IO speed.
 Please unzip the [training and test datasets](https://cseweb.ucsd.edu/~viscomp/projects/SIG17HDR/) into ./dataset_select/Data
   ```
   cd ./dataset_select
-  run PrepareData
+  run PrepareData.m
   ```
 
 ## Train
