@@ -34,3 +34,18 @@ Please unzip the [training and test datasets](https://cseweb.ucsd.edu/~viscomp/p
   ```
   python test.py
   ```
+  
+## Citation
+If you find this code useful in your research, please consider citing:
+  ```
+  @ARTICLE{DHDRNet,
+  author={Tan, Xiao and Chen, Huaian and Xu, Kai and Xu, Chunmei and Jin, Yi and Zhu, Changan and Zheng, Jinjin},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={High Dynamic Range Imaging for Dynamic Scenes with Large-Scale Motions and Severe Saturation}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TIM.2022.3144205}
+  }
+  ```
