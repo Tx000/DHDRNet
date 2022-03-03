@@ -41,11 +41,11 @@ If you find this code useful in your research, please consider citing:
   @ARTICLE{DHDRNet,
   author={Tan, Xiao and Chen, Huaian and Xu, Kai and Xu, Chunmei and Jin, Yi and Zhu, Changan and Zheng, Jinjin},
   journal={IEEE Transactions on Instrumentation and Measurement}, 
-  title={High Dynamic Range Imaging for Dynamic Scenes with Large-Scale Motions and Severe Saturation}, 
+  title={High Dynamic Range Imaging for Dynamic Scenes With Large-Scale Motions and Severe Saturation}, 
   year={2022},
-  volume={},
+  volume={71},
   number={},
-  pages={1-1},
+  pages={1-15},
   doi={10.1109/TIM.2022.3144205}
   }
   ```
