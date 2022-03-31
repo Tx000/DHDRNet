@@ -38,15 +38,6 @@ def LDR2HDR(img, expo): # input/output 0~1
     return img ** GAMMA / expo
 
 
-def arrenge(img):
-    H, W, C = img.shape
-    img_ = np.zeros(shape=(W, H, C))
-    for i in range(W):
-        for j in range(H):
-            img_[i, j, :] = img[j, i, :]
-    return img_
-
-
 def center_crop(x, image_size):
     crop_h, crop_w = image_size
     _, _, h, w = x.shape
@@ -73,7 +64,7 @@ hdr = hdr.cuda()
 hdr.load_state_dict(torch.load(args.checkpoint_dir, map_location=torch.device('cpu')))
 hdr.eval()
 
-for idx in range(0, 15):
+for idx in range(nScenes):
     print('batch no. %d:' % (idx + 1))
 
     input_features, ref_HDR = get_input(os.path.join(args.dataset, scene_dirs[idx]),
@@ -83,10 +74,9 @@ for idx in range(0, 15):
         input_features = Variable(torch.from_numpy(input_features)).cuda()
         out_HDR = hdr(input_features)
 
-    out_HDR = np.transpose(np.squeeze(out_HDR.data.cpu().numpy()), axes=(1, 2, 0))
-    out_HDR = arrenge(out_HDR)
+    out_HDR = np.transpose(np.squeeze(out_HDR.data.cpu().numpy()), axes=(2, 1, 0))
 
-    ref_HDR = arrenge(np.transpose(np.squeeze(ref_HDR), axes=(1, 2, 0)))
+    ref_HDR = np.transpose(np.squeeze(ref_HDR), axes=(2, 1, 0))
     out_HDR_T = tonemap_np(out_HDR)
     ref_HDR_T = tonemap_np(ref_HDR)
 
