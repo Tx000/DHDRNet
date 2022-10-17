@@ -9,7 +9,7 @@ import h5py
 torch.cuda.set_device(0)
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--checkpoint_dir', type=str, default='checkpoint/hdr_epoch_00000118.pth')
+parser.add_argument('--checkpoint_dir', type=str, default='checkpoint/hdr.pth')
 parser.add_argument('--results_dir', type=str, default='results')
 parser.add_argument('--batch_size', type=int, default=1)
 parser.add_argument('--c_dim', type=int, default=3)
