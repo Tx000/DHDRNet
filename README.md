@@ -31,6 +31,7 @@ Please unzip the [training and test datasets](https://cseweb.ucsd.edu/~viscomp/p
   ```
 
 ## Test
+  Our model is released in https://pan.baidu.com/s/1nnFkXQbjyWOmh4WedLygaw, code：wt31.
   ```
   python test.py
   ```
